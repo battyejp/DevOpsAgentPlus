@@ -2,7 +2,8 @@ FROM battyejp/devopsubuntu18.04
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    sudo
+    sudo \
+    wget
 
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb --insecure | sudo bash
 
